@@ -1,0 +1,139 @@
+Variables y operaciones
+1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+
+¿Qué es una variable y para qué sirve?
+Una variable es una palabra que utilizamos para guardar un tipo de dato en la memoria.
+Ejemplo let nombre = Maximiliano
+
+¿Cuál es la diferencia entre declarar e inicializar una variable?
+En programación, "declarar" una variable significa crear una etiqueta con un nombre que se puede usar para almacenar y manipular datos. Por otro lado, "inicializar" una variable significa asignarle un valor inicial en el momento de su creación.
+
+Por ejemplo, en el lenguaje de programación Java, se puede declarar una variable de tipo entero llamada "edad" de la siguiente manera:
+
+int edad;
+
+En este caso, hemos declarado una variable llamada "edad" de tipo entero, pero aún no le hemos asignado un valor. Si intentamos usar la variable sin inicializarla, obtendremos un error.
+
+Para inicializar la variable "edad" con un valor de 25, podríamos hacerlo de la siguiente manera:
+int edad = 25;
+En este caso, hemos declarado e inicializado la variable "edad" con un valor de 25 en el momento de su creación. Ahora podemos usar la variable "edad" en nuestro código y su valor será 25.
+
+¿Cuál es la diferencia entre sumar números y concatenar strings?
+sumar es cuando sumamos dos datos de tipo numerico,
+concatenar es cuando sumamos dos cadenas de texto
+
+
+¿Cuál operador me permite sumar o concatenar?
+
++
+
+2️⃣ Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
+Nombre : strings
+Apellido: strings
+Nombre de usuario en Platzi: strings
+Edad: numerico
+Correo electrónico: strings
+Mayor de edad: boleanos
+Dinero ahorrado: numerico
+Deudas: numerico
+
+3️⃣ Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
+name = Maximiliano
+lastName = Morales
+userName = maxii.1221
+age = 27
+mail = maximiliano.d.morales@gmail.com
+ageMinOrMay = true
+dinner = 2000
+Deudas = 1000
+
+
+4️⃣ Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
+Nombre completo (nombre y apellido)
+Dinero real (dinero ahorrado menos deudas)
+names = name + " " + lastname
+
+
+Funciones
+1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+¿Qué es una función?
+una funcion es un bloque de codigo que creamos para utilizar cuando no queremos repetir el texto muchas veces
+
+
+¿Cuándo me sirve usar una función en mi código?
+cuando no quiero repetir codigo
+
+¿Cuál es la diferencia entre parámetros y argumentos de una función?
+En programación, los términos "parámetros" y "argumentos" se refieren a valores que se pasan a una función. Aunque se utilizan a menudo de manera intercambiable, hay una diferencia importante entre ellos.
+
+Los parámetros de una función son los nombres de las variables que se utilizan para recibir valores de entrada. Se definen al definir la función, y se pueden usar dentro de la función como cualquier otra variable. Por ejemplo:
+function suma(a, b) {
+  return a + b;
+}
+En este caso, la función suma tiene dos parámetros llamados a y b.
+
+Por otro lado, los argumentos de una función son los valores reales que se pasan a la función cuando se la llama. Estos valores pueden ser variables, literales, expresiones o cualquier otro valor válido en JavaScript. Por ejemplo:
+var resultado = suma(2, 3);
+En este caso, estamos llamando a la función suma con dos argumentos: 2 y 3.
+
+En resumen, los parámetros son las variables declaradas en la definición de la función, mientras que los argumentos son los valores reales que se pasan a la función cuando se la llama. Los argumentos se asignan a los parámetros en el orden en que se pasan, y si se pasan menos argumentos que parámetros, los parámetros restantes se establecen en undefined.
+
+
+2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
+const name = "Juan David";
+const lastname = "Castro Gallego";
+const completeName = name + lastname;
+const nickname = "juandc";
+
+console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+Condicionales
+1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+¿Qué es un condicional?
+¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+¿Puedo combinar funciones y condicionales?
+2️⃣ Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
+const tipoDeSuscripcion = "Basic";
+
+switch (tipoDeSuscripcion) {
+   case "Free":
+       console.log("Solo puedes tomar los cursos gratis");
+       break;
+   case "Basic":
+       console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+       break;
+   case "Expert":
+       console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+       break;
+   case "ExpertPlus":
+       console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+       break;
+}
+3️⃣ Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
+💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays y un solo condicional. 😏
+
+Ciclos
+1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+¿Qué es un ciclo?
+¿Qué tipos de ciclos existen en JavaScript?
+¿Qué es un ciclo infinito y por qué es un problema?
+¿Puedo mezclar ciclos y condicionales?
+2️⃣ Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+for (let i = 0; i < 5; i++) {
+    console.log("El valor de i es: " + i);
+}
+
+for (let i = 10; i >= 2; i--) {
+    console.log("El valor de i es: " + i);
+}
+3️⃣ Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
+💡 Pista: puedes usar la función prompt de JavaScript.
+
+Listas
+1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+¿Qué es un array?
+¿Qué es un objeto?
+¿Cuándo es mejor usar objetos o arrays?
+¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
